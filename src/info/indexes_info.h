@@ -45,6 +45,8 @@ typedef struct {
   size_t total_active_queries;         // Total number of active queries (reads)
 } TotalIndexesInfo;
 
+int IndexInfoCommand(RedisModuleCtx *ctx, RedisModuleString **argv, int argc);
+int IndexObfuscatedInfo(RedisModuleCtx *ctx, RedisModuleString **argv, int argc);
 // Retrunes an aggregated statistics of all the currently existing indexes
 TotalIndexesInfo IndexesInfo_TotalInfo();
 
