@@ -128,7 +128,6 @@ struct redisearch_thpool_t* redisearch_thpool_create(size_t num_threads, size_t 
   threads_on_hold = 0;
 
   /* Make new thread pool */
-  redisearch_thpool_t* thpool_p;
   thpool_p = (struct redisearch_thpool_t*)rm_malloc(sizeof(struct redisearch_thpool_t));
   if (thpool_p == NULL) {
     if (log) log("warning", "redisearch_thpool_create(): Could not allocate memory for thread pool");
