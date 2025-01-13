@@ -1,0 +1,159 @@
+    1  pkg search llvm
+    2  redis-server
+    3  pkg remove redis
+    4  pkg search redis
+    5  pkg search redis72
+    6  pkg install -y redis72-7.2.6
+    7  cd RedisJSON/
+    8  vi Makefile 
+    9  pkg list | grep llvm
+   10  pkg install -y devel/llvm-devel
+   11  cd RedisJSON/
+   12  cargo clean
+   13  cargo build --release
+   14  nm target/release/librejson.so | grep linkm2_
+   15  pkg search llvm
+   16  pkg search llvm15
+   17  pkg install -y llvm15-15.0.7_10
+   18  pkg install -y redis
+   19  cargo clean
+   20  clang --version
+   21  cargo build --release
+   22  nm target/release/librejson.so | grep linkm2_
+   23  git status
+   24  git log
+   25  git checkout .
+   26  vi Cargo.toml 
+   27  cargo clean
+   28  cargo build
+   29  nm target/release/librejson.so | grep linkm2_
+   30  nm target/debug/librejson.so | grep linkm2_
+   31  ls -lh target/debug/librejson.so
+   32  nm /home/rahogata/librejson.so | grep linkm2_
+   33  lld /home/rahogata/librejson.so
+   34  ldd /home/rahogata/librejson.so
+   35  gmake clean
+   36  pkg install -y gmake
+   37  pkg install -y clang
+   38  gmake clean
+   39  gmake setup
+   40  gmake build
+   41  cargo clean
+   42  vi Cargo.toml 
+   43  cargo build --release
+   44  nm target/release/librejson.so | grep linkm2_
+   45  nm target/release/librejson.so 
+   46  cp target/release/librejson.so /usr/local/lib
+   47  vi /usr/local/etc/redis.conf
+   48  redis-server /usr/local/etc/redis.conf
+   49  cat /var/log/redis/redis.log 
+   50  ldd target/release/librejson.so 
+   51  gcc
+   52  pkg search thr
+   53  pkg list |grep thr
+   54  pkg list |grep libthr
+   55  ldd target/release/librejson.so 
+   56  cargo clean
+   57  cd /usr/ports/emulators/virtualbox-ose-additions && make install clean
+   58  pkg install virtualbox-ose-additions
+   59  vi /etc/rc.conf
+   60  vi /etc/rc.conf
+   61  vi /etc/rc.conf
+   62  shutdown -r now
+   63  ls /mnt/
+   64  mount_vboxvfs -w freebsd /mnt
+   65  ls /mnt/
+   66  vi /etc/rc.conf
+   67  kldload vboxsf
+   68  vi /boot/loader.conf
+   69  kldload vboxguest
+   70  service vboxguest status
+   71  service vboxguest describe
+   72  ls /mnt/
+   73  mount -t vboxsf hostshared /mnt/
+   74  kldstat
+   75  vi /etc/rc.conf
+   76  vi /boot/loader.conf
+   77  make /mnt/hostshared
+   78  ls /mnt/
+   79  shutdown -r now
+   80  ls /mnt/
+   81  mount -t vboxvfs hostshared /mnt/hostshared
+   82  mkdir /mnt/hostshared
+   83  mount -t vboxvfs free /mnt/hostshared
+   84  mount -t vboxvfs hostshared /mnt/hostshared
+   85  file /boot/modules/vboxvfs.ko
+   86  pkg install emulators/virtualbox-ose-additions
+   87  kldload /boot/modules/vboxvfs.ko
+   88  dmesg | grep vbox
+   89  pw groupmod vboxsf -m root
+   90  ls
+   91  git clone --recursive https://github.com/RediSearch/RediSearch.git
+   92  pkg install -y wget gmake clang-format gcc python python3 py38-venv py38-pip lcov git openssl unzip rsync curl
+   93  python --version
+   94  pkg install -y wget gmake clang-format gcc python python311 py311-venv py311-pip lcov git openssl unzip rsync curl
+   95  pkg install -y wget gmake gcc python python311 py311-pip lcov git openssl unzip rsync curl
+   96  pkg install -y devel/openssl
+   97  pkg install -y security/openssl-devel
+   98  pkg install -y openssl-devel
+   99  pkg install -y gcc
+  100  pkg install -y gmake
+  101  cd RediSearch/
+  102  git branch
+  103  git checkout v2.8.21
+  104  git switch -c 2.8.21
+  105  git status
+  106  cd ..
+  107  rm -rf RediSearch/
+  108  git clone --recursive https://github.com/RediSearch/RediSearch.git -b v2.8.21
+  109  cd RediSearch/
+  110  git status
+  111  git switch -c 2.8.21
+  112  cd ..
+  113  mkdir ~/.ssh
+  114  cp /home/rahogata/id_rsa /home/rahogata/id_rsa.pub ~/.ssh/
+  115  git clone --recursive git@github.com:rahogata/RediSearch.git -b v2.8.21
+  116  rm -rf RediSearch/
+  117  git clone --recursive git@github.com:rahogata/RediSearch.git -b v2.8.21
+  118  chmod 400 ~/.ssh/id_rsa
+  119  git clone --recursive git@github.com:rahogata/RediSearch.git -b v2.8.21
+  120  cd RediSearch/
+  121  git switch -c 2.8.21
+  122  git branch
+  123  pkg search venv
+  124  pkg install -y py311-pylint-venv-3.0.3
+  125  cd .install/
+  126  vi install_boost.sh 
+  127  grep bash /etc/passwd 
+  128  chmod u+x install_boost.sh 
+  129  ./install_boost.sh 
+  130  man ln
+  131  ln -s /usr/local/bin/bash /bin/bash
+  132  ./install_boost.sh 
+  133  ./install_boost.sh 1.84.0
+  134  pkg install -y cmake
+  135  cd ../
+  136  gmake build TESTS=0 NO_TESTS=1
+  137  pkg install -y redis72
+  138  git status
+  139  grep CLOCK_MONOTONIC_RAW src
+  140  grep -r CLOCK_MONOTONIC_RAW src
+  141  vi src/concurrent_ctx.c
+  142  vi src/info/index_error.c
+  143  grep -r CLOCK_MONOTONIC_RAW src
+  144  vi src/util/timeout.h
+  145  grep -r CLOCK_MONOTONIC_RAW src
+  146  vi src/util/timeout.h
+  147  grep -r CLOCK_MONOTONIC_RAW src
+  148  grep -r CLOCK_MONOTONIC_RAW deps/
+  149  vi deps/triemap/test/minunit.h
+  150  vi /root/RediSearch/deps/VectorSimilarity/src/VecSim/info_iterator.h
+  151  grep -r u_int64_t src
+  152  grep -r u_int64_t deps/
+  153  vi deps/libuv/src/unix/netbsd.c
+  154  grep -r u_int64_t deps/
+  155  vi deps/VectorSimilarity/src/VecSim/info_iterator.h
+  156  gmake build TESTS=0 NO_TESTS=1 DEBUG=0
+  157  vi /root/RediSearch/deps/thpool/thpool.c
+  158  gmake build TESTS=0 NO_TESTS=1 DEBUG=0
+  159  history > rsdeps.txt

@@ -61,7 +61,7 @@ typedef int(*TimeoutCb)(TimeoutCtx *);
 
 static inline int TimedOut(struct timespec *timeout) {
   static struct timespec now;
-  clock_gettime(CLOCK_MONOTONIC_RAW, &now);
+  clock_gettime(CLOCK_MONOTONIC, &now);
   if (__builtin_expect(rs_timer_ge(&now, timeout), 0)) {
     return TIMED_OUT;
   }
@@ -120,7 +120,7 @@ static inline void updateTimeout(struct timespec *timeout, int32_t durationNS) {
   struct timespec now = { .tv_sec = 0, .tv_nsec = 0 };
   struct timespec duration = { .tv_sec = durationNS / 1000,
                                .tv_nsec = ((durationNS % 1000) * 1000000) };
-  clock_gettime(CLOCK_MONOTONIC_RAW, &now);
+  clock_gettime(CLOCK_MONOTONIC, &now);
   rs_timeradd(&now, &duration, timeout);
 }
 

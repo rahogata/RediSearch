@@ -33,7 +33,6 @@
 #define THPOOL_DEBUG 0
 #endif
 
-#define LOG_IF_EXISTS(level, str, ...) if (thpool_p->log) {thpool_p->log(level, str, ##__VA_ARGS__);}
 
 static volatile int threads_on_hold;
 
@@ -122,7 +121,8 @@ static void bsem_post_all(struct bsem* bsem_p);
 static void bsem_wait(struct bsem* bsem_p);
 
 /* ========================== THREADPOOL ============================ */
-
+redisearch_thpool_t* thpool_p;
+#define LOG_IF_EXISTS(level, str, ...) if (thpool_p->log) {thpool_p->log(level, str, ##__VA_ARGS__);}
 /* Create thread pool */
 struct redisearch_thpool_t* redisearch_thpool_create(size_t num_threads, size_t num_privileged_threads, LogFunc log) {
   threads_on_hold = 0;

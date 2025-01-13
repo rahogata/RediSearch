@@ -141,7 +141,7 @@ void ConcurrentSearchCtx_ReopenKeys(ConcurrentSearchCtx *ctx) {
 /** Check the elapsed timer, and release the lock if enough time has passed */
 int ConcurrentSearch_CheckTimer(ConcurrentSearchCtx *ctx) {
   static struct timespec now;
-  clock_gettime(CLOCK_MONOTONIC_RAW, &now);
+  clock_gettime(CLOCK_MONOTONIC, &now);
 
   long long durationNS = (long long)1000000000 * (now.tv_sec - ctx->lastTime.tv_sec) +
                          (now.tv_nsec - ctx->lastTime.tv_nsec);
@@ -163,7 +163,7 @@ int ConcurrentSearch_CheckTimer(ConcurrentSearchCtx *ctx) {
 }
 
 void ConcurrentSearchCtx_ResetClock(ConcurrentSearchCtx *ctx) {
-  clock_gettime(CLOCK_MONOTONIC_RAW, &ctx->lastTime);
+  clock_gettime(CLOCK_MONOTONIC, &ctx->lastTime);
   ctx->ticker = 0;
 }
 

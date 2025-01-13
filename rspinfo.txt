@@ -1,0 +1,90 @@
+bash-5.2.37                    GNU Project's Bourne Again SHell
+binutils-2.43.1,1              GNU binary tools
+brotli-1.1.0,1                 Generic-purpose lossless compression algorithm
+cmake-3.31.3                   Meta-port to connect all CMake bits
+cmake-core-3.31.3              Cross-platform Makefile generator
+cmake-doc-3.31.3               HTML and Qt Creator helpfiles for CMake
+cmake-man-3.31.3               Manual pages for CMake
+curl-8.11.1_1                  Command line tool and library for transferring data with URLs
+dbus-1.14.10_5,1               Message bus system for inter-application communication
+expat-2.6.3                    XML 1.0 parser written in C
+gcc-13_5                       Meta-port for the default version of the GNU Compiler Collection
+gcc13-13.3.0                   GNU Compiler Collection 13
+gettext-runtime-0.22.5         GNU gettext runtime libraries and programs
+git-2.47.1                     Distributed source code management tool 
+gmake-4.4.1                    GNU version of 'make' utility
+gmp-6.3.0                      Free library for arbitrary precision arithmetic
+indexinfo-0.3.1                Utility to regenerate the GNU info page index
+jsoncpp-1.9.6_1                JSON reader and writer library for C++
+lcov-1.15_1                    Linux Test Project GCOV extension
+libICE-1.1.1,1                 Inter Client Exchange library for X11
+libSM-1.2.4,1                  Session Management library for X11
+libX11-1.8.9,1                 X11 library
+libXau-1.0.11                  Authentication Protocol library for X11
+libXcursor-1.2.2               X client-side cursor loading library
+libXdmcp-1.1.5                 X Display Manager Control Protocol library
+libXext-1.3.6,1                X11 Extension library
+libXfixes-6.0.1                X Fixes extension library
+libXmu-1.1.4,1                 X Miscellaneous Utilities libraries
+libXrandr-1.5.4                X Resize and Rotate extension library
+libXrender-0.9.11              X Render extension library
+libXt-1.3.0,1                  X Toolkit library
+libedit-3.1.20240808,1         Command line editor library
+libffi-3.4.6                   Foreign Function Interface
+libiconv-1.17_1                Character set conversion library
+libidn2-2.3.7                  Implementation of IDNA2008 internationalized domain names
+liblz4-1.10.0,1                LZ4 compression library, lossless and very fast
+libnghttp2-1.63.0              HTTP/2.0 C Library
+libpsl-0.21.5_1                C library to handle the Public Suffix List
+libssh2-1.11.0_1,3             Library implementing the SSH2 protocol
+libunistring-1.2               Unicode string library
+libuv-1.49.2                   Multi-platform support library with a focus on asynchronous I/O
+libxcb-1.17.0                  The X protocol C-language Binding (XCB) library
+libxml2-2.11.9                 XML parser library for GNOME
+llvm-devel-20.0.d20241015      LLVM and Clang
+llvm15-15.0.7_10               LLVM and Clang
+lua53-5.3.6_1                  Powerful, efficient, lightweight, embeddable scripting language
+mpc-1.3.1_1                    Library of complex numbers with arbitrarily high precision
+mpdecimal-4.0.0                C/C++ arbitrary precision decimal floating point libraries
+mpfr-4.2.1,1                   Library for multiple-precision floating-point computations
+openssl-3.0.15_1,1             TLSv1.3 capable SSL and crypto library
+p5-Authen-SASL-2.17            Perl5 module for SASL authentication
+p5-CGI-4.66                    Handle Common Gateway Interface requests and responses
+p5-Clone-0.47                  Recursively copy Perl datatypes
+p5-Digest-HMAC-1.04            Perl5 interface to HMAC Message-Digest Algorithms
+p5-Encode-Locale-1.05          Determine the locale encoding
+p5-Error-0.17029               Error/exception handling in object-oriented programming style
+p5-GSSAPI-0.28_2               Perl extension providing access to the GSSAPIv2 library
+p5-HTML-Parser-3.83            Perl5 module for parsing HTML documents
+p5-HTML-Tagset-3.24            Some useful data table in parsing HTML
+p5-HTTP-Date-6.06              Conversion routines for the HTTP protocol date formats
+p5-HTTP-Message-6.46           Representation of HTTP style messages
+p5-IO-HTML-1.004               Open an HTML file with automatic charset detection
+p5-IO-Socket-IP-0.42           Drop-in replacement for IO::Socket::INET supporting IPv4 and IPv6
+p5-IO-Socket-SSL-2.089         Perl5 interface to SSL sockets
+p5-LWP-MediaTypes-6.04         Guess media type for a file or a URL
+p5-Mozilla-CA-20240924         Perl extension for Mozilla CA cert bundle in PEM format
+p5-Net-SSLeay-1.94             Perl5 interface to SSL
+p5-TimeDate-2.33,1             Perl5 module containing a better/faster date parser for absolute dates
+p5-URI-5.29                    Perl5 interface to Uniform Resource Identifier (URI) references
+pcre2-10.43                    Perl Compatible Regular Expressions library, version 2
+perl5-5.36.3_2                 Practical Extraction and Report Language
+pkg-1.21.3                     Package manager
+py311-pip-23.3.2_3             Tool for installing and managing Python packages
+py311-pylint-venv-3.0.3        Pylint-venv allows use same Pylint with different virtual environments
+py311-setuptools-63.1.0_1      Python packages installer
+python-3.11_3,2                "meta-port" for the default version of Python interpreter
+python3-3_4                    Meta-port for the Python interpreter 3.x
+python311-3.11.11              Interpreted object-oriented programming language
+readline-8.2.13_1              Library for editing command lines as they are typed
+redis72-7.2.7                  Persistent key-value database with built-in net interface
+rhash-1.4.4_1                  Utility and library for computing and checking of file hashes
+rsync-3.3.0                    Network file distribution/synchronization utility
+rust-1.81.0                    Language with a focus on memory safety and concurrency
+unzip-6.0_8                    List, test, and extract compressed files from a ZIP archive
+virtualbox-ose-additions-6.1.50.1304000_1 VirtualBox additions for FreeBSD guests
+wget-1.25.0                    Retrieve files from the Net via HTTP(S) and FTP
+xorgproto-2024.1               X Window System unified protocol definitions
+xrandr-1.5.2_1                 Primitive command line interface to the RandR extension
+xxhash-0.8.2_1                 Extremely fast non-cryptographic hash algorithm
+zstd-1.5.6                     Fast real-time compression algorithm

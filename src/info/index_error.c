@@ -48,7 +48,7 @@ void IndexError_AddError(IndexError *error, const char *error_message, RedisModu
     RedisModule_TrimStringAllocation(error->key);
     // Atomically increment the error_count by 1, since this might be called when spec is unlocked.
     __atomic_add_fetch(&error->error_count, 1, __ATOMIC_RELAXED);
-    clock_gettime(CLOCK_MONOTONIC_RAW, &error->last_error_time);
+    clock_gettime(CLOCK_MONOTONIC, &error->last_error_time);
 }
 
 void IndexError_Clear(IndexError error) {
